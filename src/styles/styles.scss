@@ -24,6 +24,10 @@ p {
     margin: 0;
 }
 
+.large-text {
+    font-size: 26px !important;
+}
+
 .text-bold {
     font-size: 22px;
     font-weight: 500;
@@ -111,6 +115,43 @@ p {
     padding: 30px 40px 40px 40px;
     border-radius: 4px;
     width: 100%;
+    &.scholarship {
+        height: 564px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 16px;
+        h1 {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px !important;
+            margin-top: 33px;
+        }
+    }
+}
+
+.scholarship-wrapper {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 564px;
+    .scholarship-item {
+        padding: 25px;
+        flex: 48% 2;
+        .ant-divider-horizontal {
+            margin: 0;
+            margin-bottom: 10px;
+            min-width: 40px !important; // override antdesign styles
+            width: 40px;
+        }
+        &.commitment {
+            height: 294px;
+        }
+        &.contract {
+            height: 178px;
+        }
+    }
 }
 
 .close-application {

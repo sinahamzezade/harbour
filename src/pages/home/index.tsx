@@ -5,6 +5,7 @@ import { MenuOutlined } from "@ant-design/icons";
 
 import TopSection from "./sections/TopSection";
 import About from "./sections/About";
+import Scholarship from "./sections/Scholarship";
 
 const Home = () => {
   return (
@@ -34,6 +35,9 @@ const Home = () => {
       </Col>
       <Col span={24} className="jumbotron">
         <About />
+      </Col>
+      <Col span={24} className="jumbotron">
+        <Scholarship />
       </Col>
     </Row>
   );
