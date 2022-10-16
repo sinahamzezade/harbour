@@ -1,0 +1,11 @@
+.ant-btn {
+    border-radius: 29px !important;
+    padding: 0 40px;
+    height: 58px;
+    font-size: 18px;
+    font-weight: 500;
+    &.ant-btn-primary {
+        background-color: $darkColor !important;
+        border: $darkColor;
+    }
+}

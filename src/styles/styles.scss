@@ -1,4 +1,153 @@
 @import "variables";
+@import "reset";
 
-.App-header {
+p {
+    color: $text-color;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.primary-title {
+    color: $darkColor !important;
+    font-weight: 500 !important;
+    font-size: 48px !important;
+}
+
+.primary-text {
+    color: $darkColor !important;
+    font-weight: 500 !important;
+    font-size: 16px;
+    margin: 0;
+}
+
+.text-bold {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.header {
+    background-color: $darkColor;
+    height: 58px;
+    .header-navigation-icon {
+        color: #fff;
+        font-size: 22px;
+    }
+    .header-logo {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        h1 {
+            color: #fff;
+            font-size: 20px;
+            margin: 0;
+        }
+        span {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
+
+.header-apply {
+    background-color: $greenColor;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    display: flex;
+    align-items: center;
+    border-radius: 105px;
+    width: 105px;
+    height: 105px;
+    justify-content: center;
+    span {
+        line-height: 1.2;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+.jumbotron {
+    margin: 90px 0;
+    .jumbotron-ps {
+        display: flex;
+        gap: 8px;
+    }
+    .interaction-icon {
+        top: -90px;
+        right: 80px;
+        position: absolute;
+    }
+}
+
+.powered-by {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    justify-content: flex-start;
+    div {
+        p {
+            &:first-child {
+                font-size: 18px;
+            }
+            margin: 0;
+        }
+    }
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.card {
+    border: 1px solid #dadada;
+    width: 100%;
+    display: block;
+    padding: 30px 40px 40px 40px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.close-application {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .counter {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        p {
+            margin: 0;
+            font-weight: 300;
+            font-size: 27px;
+            line-height: 24px;
+            color: $text-color;
+        }
+    }
+}
+
+.application-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    .information-item {
+        flex: 47% 2;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.person {
+    img {
+        border-radius: 50%;
+    }
 }
