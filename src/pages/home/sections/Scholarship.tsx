@@ -3,10 +3,10 @@ const { Title } = Typography;
 
 const Scholarship = () => {
   return (
-    <Row align="middle" justify="center">
-      <Col span={16}>
+    <Row align="middle" justify="center" className="scholarship-section">
+      <Col xl={16} xs={24}>
         <Row gutter={[16, 16]}>
-          <Col span={8}>
+          <Col xl={8} xs={24}>
             <div className="card scholarship">
               <div className="application-info">
                 <div className="information-item">
@@ -15,7 +15,7 @@ const Scholarship = () => {
                 </div>
               </div>
               <div className="card-footer">
-                <Divider />
+                <Divider className="hidden-xs"/>
                 <div className="application-info">
                   <div className="information-item">
                     <p className="primary-text">Tuition covered</p>
@@ -33,7 +33,7 @@ const Scholarship = () => {
               </div>
             </div>
           </Col>
-          <Col span={16}>
+          <Col xl={16} xs={24}>
             <div className="scholarship-wrapper">
               <div className="card scholarship-item commitment">
                 <div className="application-info">

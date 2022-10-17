@@ -5,34 +5,36 @@ const { Title } = Typography;
 
 const TopSection = () => {
   return (
-    <Row align="middle" justify="center">
-      <Col span={16}>
-        <Row gutter={[16, 16]}>
-          <Col span={12}>
+    <Row align="middle" justify="center" className="top-section">
+      <Col xl={16} xs={24}>
+        <Row gutter={[46, 16]}>
+          <Col xl={12} xs={24}>
             <Space direction="vertical">
               <Title className="primary-title">
                 Interaction Design <br /> Apprenticeship
               </Title>
               <BrandIcon className="interaction-icon" />
-              <p className="text-bold">
-                A fully funded work-study program to launch <br /> your tech
-                career
-              </p>
-              <p>
-                Harbour.Space has partnered with SCG to empower driven talent
-                and eliminate the barriers to accessing exceptional education
-                and career opportunities through a Masters Fellowship.
-              </p>
-              <div className="jumbotron-ps">
-                <p className="text-bold">Position:</p>
-                <p>Marketing Performance</p>
+              <div className="hidden-xs">
+                <p className="text-bold">
+                  A fully funded work-study program to launch <br /> your tech
+                  career
+                </p>
+                <p>
+                  Harbour.Space has partnered with SCG to empower driven talent
+                  and eliminate the barriers to accessing exceptional education
+                  and career opportunities through a Masters Fellowship.
+                </p>
+                <div className="jumbotron-ps">
+                  <p className="text-bold">Position:</p>
+                  <p>Marketing Performance</p>
+                </div>
+                <Button type="primary" className="mt-1">
+                  Apply Now
+                </Button>
               </div>
-              <Button type="primary" className="mt-1">
-                Apply Now
-              </Button>
             </Space>
           </Col>
-          <Col span={12}>
+          <Col xl={12} xs={24}>
             <Space direction="vertical" className="fullwidth" size={30}>
               <div className="powered-by">
                 <Image src={elephant} width={80} preview={false} />
@@ -79,6 +81,24 @@ const TopSection = () => {
                     <p>3 Aug 2020</p>
                   </div>
                 </div>
+              </div>
+              <div className="show-xs hidden-lg">
+                <p className="text-bold">
+                  A fully funded work-study program to launch <br /> your tech
+                  career
+                </p>
+                <p>
+                  Harbour.Space has partnered with SCG to empower driven talent
+                  and eliminate the barriers to accessing exceptional education
+                  and career opportunities through a Masters Fellowship.
+                </p>
+                <div className="jumbotron-ps">
+                  <p className="text-bold">Position:</p>
+                  <p>Marketing Performance</p>
+                </div>
+                <Button type="primary" className="mt-1">
+                  Apply Now
+                </Button>
               </div>
             </Space>
           </Col>

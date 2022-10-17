@@ -1,0 +1,219 @@
+// Mobile queries
+@media (max-width: 48em) {
+    .header {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .testimonial-section,
+    .top-section {
+        &::before {
+            display: none;
+        }
+    }
+
+    .top-section,
+    .faq,
+    .scholarship-section {
+        padding: 0 20px;
+    }
+
+    .interaction-icon {
+        top: -135px !important;
+        right: 10px !important;
+    }
+
+    .primary-title {
+        font-size: 35px !important;
+    }
+
+    .card {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .hidden-lg {
+        display: block !important;
+    }
+
+    .show-xs {
+        display: block;
+    }
+
+    .powered-by {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 16px;
+        div {
+            display: flex;
+            gap: 8px;
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    p {
+        font-size: 18px !important;
+    }
+
+    .counter {
+        gap: 10px !important;
+        p {
+            font-size: 20px !important;
+        }
+    }
+
+    .about {
+        z-index: 1;
+        background-color: #fff;
+    }
+
+    .about-background {
+        background-color: #685dc5;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 160px;
+    }
+
+    .about-card {
+        margin: 0 20px;
+        margin-top: -250px;
+        background-color: #fff;
+        padding: 188px 20px 80px 20px;
+        border: 1px solid #e6e6e6;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .person {
+        z-index: 92;
+        .ant-image {
+            height: 334px !important;
+            z-index: 1;
+        }
+        &::before {
+            width: 351px;
+            height: 351px;
+            left: 0 !important;
+            right: 0 !important;
+            background-size: 351px !important;
+        }
+
+        img {
+            display: block;
+            margin: 15px auto;
+            width: 286px;
+            height: 286px !important;
+        }
+    }
+
+    // .scholarship-section {
+    //     min-height: 1400px;
+    // }
+
+    .scholarship {
+        border: none;
+        height: auto !important;
+        .primary-text {
+            font-size: 16px !important;
+        }
+        h1,
+        p {
+            margin-top: 10px !important;
+            margin: 0;
+            font-weight: 300;
+            font-size: 24px !important;
+        }
+    }
+
+    .scholarship-wrapper {
+        height: auto !important;
+        .scholarship-item {
+            &.contract {
+                height: 220px;
+            }
+        }
+    }
+
+    .testimonial-background {
+        background-color: #685dc5;
+        width: 100%;
+        height: 257px;
+        position: absolute;
+        top: -150px;
+    }
+
+    .testimonial-section {
+        .tesimonial-info {
+            padding: 15px !important;
+            .author {
+                text-align: left;
+            }
+        }
+        .testimonial-content {
+            padding: 25px !important;
+            h1 {
+                font-size: 24px !important;
+                color: #535353 !important;
+            }
+            p {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    .faq-icon {
+        &.close {
+            font-size: 28px !important;
+        }
+        &.open {
+            font-size: 28px !important;
+        }
+    }
+
+    .faq-panel {
+        display: block !important;
+        width: 100%;
+        min-height: auto !important;
+        .faq-content {
+            width: 100% !important;
+            .content {
+                display: none;
+                margin-top: 20px;
+                &.visible {
+                    display: block;
+                    animation-name: opacity;
+                    animation-duration: 0.3s;
+                }
+            }
+        }
+        p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        .faq-panel-title {
+            display: none;
+        }
+    }
+
+    .ant-collapse-header {
+        min-height: auto !important;
+    }
+
+    .ant-collapse-item {
+        padding-top: 0 !important;
+        &:first-child {
+            border-top: none !important;
+        }
+    }
+
+    .faq-filter {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column !important;
+        gap: 16px;
+    }
+}

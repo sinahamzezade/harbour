@@ -67,6 +67,12 @@ p {
     width: 105px;
     height: 105px;
     justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.04);
+    }
     span {
         line-height: 1.2;
         text-align: center;
@@ -76,7 +82,7 @@ p {
 }
 
 .jumbotron {
-    margin: 90px 0;
+    margin: 55px 0;
     .jumbotron-ps {
         display: flex;
         gap: 8px;
@@ -108,6 +114,7 @@ p {
 }
 
 .card {
+    background: #fff;
     border: 1px solid #dadada;
     width: 100%;
     display: block;
@@ -123,7 +130,7 @@ p {
         h1 {
             font-style: normal;
             font-weight: 300;
-            font-size: 48px !important;
+            font-size: 48px;
             margin-top: 33px;
         }
     }
@@ -185,58 +192,100 @@ p {
         font-size: 16px;
     }
 }
-
 .person {
+    &::before {
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: -20px;
+        left: -10px;
+        width: 438px;
+        height: 438px;
+        overflow: visible;
+        background: url("../assets/about-pattern.png") no-repeat;
+    }
+
     img {
         border-radius: 50%;
     }
 }
 
-.testimonial {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    .testimonial-content {
-        padding: 55px 120px;
-        justify-content: flex-start;
-        text-align: left;
-        background-color: #fbfbfb;
-        h1 {
-            text-align: left;
-            font-style: normal;
-            font-weight: 300 !important;
-            font-size: 26px;
-            color: #6a6a6a;
-            line-height: 35px;
-        }
-        p {
-            font-size: 16px;
-            margin: 40px 0 0 0;
-        }
+.top-section {
+    &::before {
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        width: 560px;
+        height: 395px;
+        overflow: visible;
+        background: url("../assets/top-pattern.png") no-repeat center center;
     }
-    .tesimonial-info {
+}
+
+.testimonial-section {
+    &::before {
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: -100px;
+        left: 0;
+        right: 0;
+        width: 1120px;
+        height: 395px;
+        overflow: visible;
+        background: url("../assets/testimonial-pattern.png") no-repeat center center;
+    }
+
+    .testimonial {
+        padding: 0;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        width: 100%;
-        justify-content: space-between;
-        padding: 40px;
-        .anticon {
-            font-size: 24px;
-            color: #b2b2b2;
-        }
-        .author {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+        gap: 20px;
+        background: #fff;
+        .testimonial-content {
+            padding: 55px 120px;
+            justify-content: flex-start;
+            text-align: left;
+            background-color: #fbfbfb;
+            h1 {
+                text-align: left;
+                font-style: normal;
+                font-weight: 300 !important;
+                font-size: 26px;
+                color: #6a6a6a;
+                line-height: 35px;
+            }
             p {
                 font-size: 16px;
-                margin: 0;
+                margin: 40px 0 0 0;
+            }
+        }
+        .tesimonial-info {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            padding: 40px;
+            .anticon {
+                font-size: 24px;
+                color: #b2b2b2;
+            }
+            .author {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                p {
+                    font-size: 16px;
+                    margin: 0;
+                }
             }
         }
     }
 }
+
 .faq {
     .faq-filter {
         .ant-select-arrow {
@@ -324,6 +373,17 @@ p {
             color: $primaryColor;
         }
     }
+
+    .faq-filter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+.hidden-lg {
+    display: none;
 }
 
 @keyframes opacity {
@@ -336,3 +396,5 @@ p {
         display: flex !important;
     }
 }
+
+@import "responsive";
