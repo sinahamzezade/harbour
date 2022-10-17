@@ -8,8 +8,20 @@ import About from "./sections/About";
 import Scholarship from "./sections/Scholarship";
 import Testimonial from "./sections/Testimonial";
 import Faq from "./sections/Faq";
+import StickyBar from "./sections/StickyBar";
+import { useDispatch } from "react-redux";
+import { Dispatch } from "../../shared/store";
+import { useEffect } from "react";
 
 const Home = () => {
+  const dispatch = useDispatch<Dispatch>();
+
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch.header.toggleSticky(true);
+    }, 2000);
+  }, []);
+
   return (
     <Row gutter={[16, 90]}>
       <Col span={24}>
@@ -47,6 +59,7 @@ const Home = () => {
       <Col span={24} className="jumbotron">
         <Faq />
       </Col>
+      <StickyBar />
     </Row>
   );
 };
