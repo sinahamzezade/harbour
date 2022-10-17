@@ -7,6 +7,7 @@ import TopSection from "./sections/TopSection";
 import About from "./sections/About";
 import Scholarship from "./sections/Scholarship";
 import Testimonial from "./sections/Testimonial";
+import Faq from "./sections/Faq";
 
 const Home = () => {
   return (
@@ -42,6 +43,9 @@ const Home = () => {
       </Col>
       <Col span={24} className="jumbotron">
         <Testimonial />
+      </Col>
+      <Col span={24} className="jumbotron">
+        <Faq />
       </Col>
     </Row>
   );

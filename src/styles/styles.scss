@@ -12,13 +12,13 @@ p {
 }
 
 .primary-title {
-    color: $darkColor !important;
+    color: $primaryColor !important;
     font-weight: 500 !important;
     font-size: 48px !important;
 }
 
 .primary-text {
-    color: $darkColor !important;
+    color: $primaryColor !important;
     font-weight: 500 !important;
     font-size: 16px;
     margin: 0;
@@ -33,7 +33,7 @@ p {
 }
 
 .header {
-    background-color: $darkColor;
+    background-color: $primaryColor;
     height: 58px;
     .header-navigation-icon {
         color: #fff;
@@ -235,5 +235,104 @@ p {
                 margin: 0;
             }
         }
+    }
+}
+.faq {
+    .faq-filter {
+        .ant-select-arrow {
+            right: -95px !important;
+            color: #000;
+        }
+        .ant-select-selector {
+            border-radius: 29px;
+            padding-left: 24px;
+            width: 235px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .ant-select-selection-item {
+                color: $primaryColor;
+                font-style: normal;
+                font-weight: 500 !important;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        p {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+    .faq-icon {
+        font-size: 48px !important;
+        &.close {
+            color: $primaryColor;
+        }
+        &.open {
+            color: #dadada;
+        }
+    }
+    .ant-collapse-header {
+        // Override AntD styles
+        display: flex;
+        min-height: 100px;
+        align-items: flex-start;
+        padding-right: 120px !important;
+        .ant-collapse-arrow {
+            top: 50px !important;
+        }
+    }
+    .ant-collapse-content-box {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .ant-collapse-item {
+        border-bottom: 1px solid #e6e6e6;
+        padding-top: 47px;
+        padding-bottom: 10px;
+        margin: 0;
+        &:first-child {
+            border-top: 1px solid #e6e6e6;
+        }
+    }
+    .faq-panel {
+        display: flex;
+        align-items: flex-start;
+        gap: 150px;
+        min-height: 100px;
+        padding-top: 20px;
+        .faq-content {
+            width: 60%;
+            .content {
+                display: none;
+                margin-top: 20px;
+                &.visible {
+                    display: block;
+                    animation-name: opacity;
+                    animation-duration: 0.3s;
+                }
+            }
+        }
+        p {
+            margin: 0;
+        }
+        .faq-panel-title {
+            font-size: 22px;
+            font-weight: 500;
+            color: $primaryColor;
+        }
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+        display: none !important;
+    }
+    100% {
+        opacity: 1;
+        display: flex !important;
     }
 }
