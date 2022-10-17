@@ -17,24 +17,29 @@ const Testimonial = () => {
             <Col span={24} className="testimonial-section">
               <Swiper
                 style={{ textAlign: "center" }}
-                slidesPerView={1.2}
+                slidesPerView={1.8}
                 loop
                 centeredSlides
                 breakpoints={{
                   0: {
                     spaceBetween: 20,
+                    slidesPerView: 1.2,
                   },
                   480: {
                     spaceBetween: 20,
+                    slidesPerView: 1.2,
                   },
                   640: {
                     spaceBetween: 50,
+                    slidesPerView: 1.2,
                   },
                   768: {
                     spaceBetween: 50,
+                    slidesPerView: 1.8,
                   },
                   1024: {
                     spaceBetween: 50,
+                    slidesPerView: 1.8,
                   },
                 }}
               >
