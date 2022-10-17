@@ -29,7 +29,6 @@ p {
 }
 
 .text-bold {
-    font-size: 22px;
     font-weight: 500;
 }
 
@@ -190,5 +189,51 @@ p {
 .person {
     img {
         border-radius: 50%;
+    }
+}
+
+.testimonial {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .testimonial-content {
+        padding: 55px 120px;
+        justify-content: flex-start;
+        text-align: left;
+        background-color: #fbfbfb;
+        h1 {
+            text-align: left;
+            font-style: normal;
+            font-weight: 300 !important;
+            font-size: 26px;
+            color: #6a6a6a;
+            line-height: 35px;
+        }
+        p {
+            font-size: 16px;
+            margin: 40px 0 0 0;
+        }
+    }
+    .tesimonial-info {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 40px;
+        .anticon {
+            font-size: 24px;
+            color: #b2b2b2;
+        }
+        .author {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            p {
+                font-size: 16px;
+                margin: 0;
+            }
+        }
     }
 }
